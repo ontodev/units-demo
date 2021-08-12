@@ -48,8 +48,14 @@ def index():
             return error("A UCUM code is required.")
         ucum_code = unquote_plus(ucum_code)
         try:
-            gout = convert([ucum_code], UNITS_SI_MAPPINGS, UNITS_PREFIXES, UNITS_EXPONENTS,
-                           UNITS_MAPPINGS, fail_on_err=True)
+            gout = convert(
+                [ucum_code],
+                UNITS_SI_MAPPINGS,
+                UNITS_PREFIXES,
+                UNITS_EXPONENTS,
+                UNITS_MAPPINGS,
+                fail_on_err=True,
+            )
         except (RecursionError, ValueError):
             return error(f"'{ucum_code}' is not a valid UCUM code.")
         # The canonical code used in IRI may be different than provided code
@@ -62,7 +68,14 @@ def index():
 @app.route("/<ucum_code>")
 def show_ucum(ucum_code):
     try:
-        gout = convert([ucum_code], UNITS_SI_MAPPINGS, UNITS_PREFIXES, UNITS_EXPONENTS, UNITS_MAPPINGS, fail_on_err=True)
+        gout = convert(
+            [ucum_code],
+            UNITS_SI_MAPPINGS,
+            UNITS_PREFIXES,
+            UNITS_EXPONENTS,
+            UNITS_MAPPINGS,
+            fail_on_err=True,
+        )
     except (RecursionError, ValueError):
         return error(f"'{ucum_code}' is not a valid UCUM code.")
     html = graph_to_html(gout)
@@ -71,5 +84,5 @@ def show_ucum(ucum_code):
 
 def error(message):
     html = "<h3>Oops!</h3>"
-    html += f"<p>{message} <a href=\"/\">Go back</a>.</p>"
+    html += f'<p>{message} <a href="/">Go back</a>.</p>'
     return render_template("base.html", default=html), 400
