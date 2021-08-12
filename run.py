@@ -85,12 +85,25 @@ def show_ucum(ucum_code):
         # Return a download file
         if outfmt == "ttl":
             mt = "text/turtle"
+            outstr = gout.serialize(format=outfmt)
         elif outfmt == "json-ld":
             mt = "application/ld+json"
+            # Serialize the graph with context
+            jsonld_context = {}
+            for ns, base in dict(gout.namespaces()).items():
+                jsonld_context[ns] = str(base)
+            jsonld_context = {"@context": jsonld_context}
+            outstr = gout.serialize(format=outfmt, context=jsonld_context)
+            # File extension should just be .json
+            outfmt = "json"
         else:
             return error(f"'{outfmt}' is not a valid export format.")
         buffer = BytesIO()
-        buffer.write(gout.serialize(format=outfmt).encode("utf-8-sig"))
+        # Handle backwards compatibility for rdflib 5.x.x (bytes output) and 6.x.x (str output)
+        if isinstance(outstr, str):
+            buffer.write(outstr.encode("utf-8-sig"))
+        else:
+            buffer.write(outstr)
         buffer.seek(0)
         return send_file(
             buffer, mimetype=mt, attachment_filename=f"{ucum_code}.{outfmt}", as_attachment=True
