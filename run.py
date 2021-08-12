@@ -1,4 +1,6 @@
-from flask import Flask, redirect, render_template, request, url_for
+from io import BytesIO
+
+from flask import Flask, redirect, render_template, request, send_file, url_for
 from rdflib import RDF, OWL
 from units.convert import convert, graph_to_html
 from units.helpers import get_exponents, get_mappings, get_prefixes, get_si_mappings
@@ -78,8 +80,23 @@ def show_ucum(ucum_code):
         )
     except (RecursionError, ValueError):
         return error(f"'{ucum_code}' is not a valid UCUM code.")
+    outfmt = request.args.get("format")
+    if outfmt:
+        # Return a download file
+        if outfmt == "ttl":
+            mt = "text/turtle"
+        elif outfmt == "json-ld":
+            mt = "application/ld+json"
+        else:
+            return error(f"'{outfmt}' is not a valid export format.")
+        buffer = BytesIO()
+        buffer.write(gout.serialize(format=outfmt).encode("utf-8-sig"))
+        buffer.seek(0)
+        return send_file(
+            buffer, mimetype=mt, attachment_filename=f"{ucum_code}.{outfmt}", as_attachment=True
+        )
     html = graph_to_html(gout)
-    return render_template("base.html", default=html)
+    return render_template("term.html", html=html)
 
 
 def error(message):

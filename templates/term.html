@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+  {{ html|safe }}
+</div>
+
+<div class="row float-end">
+  <p>
+    Download as: <a href="?format=ttl">Turtle</a> | <a href="?format=json-ld">JSON-LD</a>
+  </p>
+</div>
+
+{% endblock %}
