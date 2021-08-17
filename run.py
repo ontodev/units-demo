@@ -1,6 +1,7 @@
-from io import BytesIO
+import json
 
-from flask import Flask, redirect, render_template, request, send_file, url_for
+from flask import Flask, redirect, render_template, request, Response, send_file, url_for
+from io import BytesIO
 from rdflib import RDF, OWL
 from units.convert import convert, graph_to_html
 from units.helpers import get_exponents, get_mappings, get_prefixes, get_si_mappings
@@ -64,6 +65,15 @@ def index():
         iri = str(list(gout.subjects(RDF.type, OWL.NamedIndividual))[0])
         url_code = unquote_plus(iri.replace("https://w3id.org/units/", ""))
         return redirect(url_for("show_ucum", ucum_code=url_code))
+    query = request.args.get("query")
+    if query:
+        with open("resources/si_input.json", "r") as f:
+            data = json.loads(f.read())
+        matches = []
+        for itm in data:
+            if query.lower() in itm["id"].lower() or query.lower() in itm["label"].lower():
+                matches.append(itm)
+        return Response(json.dumps(matches, indent=4), mimetype="application/json")
     return render_template("index.html", examples=EXAMPLES)
 
 

@@ -1,0 +1,1238 @@
+[
+  {
+    "id": "A",
+    "label": "ampere"
+  },
+  {
+    "id": "cd",
+    "label": "candela"
+  },
+  {
+    "id": "K",
+    "label": "kelvin"
+  },
+  {
+    "id": "mol",
+    "label": "mole"
+  },
+  {
+    "id": "m",
+    "label": "metre"
+  },
+  {
+    "id": "s",
+    "label": "second"
+  },
+  {
+    "id": "g",
+    "label": "gram"
+  },
+  {
+    "id": "Bq",
+    "label": "becquerel"
+  },
+  {
+    "id": "C",
+    "label": "coulomb"
+  },
+  {
+    "id": "Cel",
+    "label": "degree Celsius"
+  },
+  {
+    "id": "F",
+    "label": "farad"
+  },
+  {
+    "id": "Gy",
+    "label": "gray"
+  },
+  {
+    "id": "Hz",
+    "label": "hertz"
+  },
+  {
+    "id": "H",
+    "label": "henry"
+  },
+  {
+    "id": "J",
+    "label": "joule"
+  },
+  {
+    "id": "kat",
+    "label": "katal"
+  },
+  {
+    "id": "lm",
+    "label": "lumen"
+  },
+  {
+    "id": "lx",
+    "label": "lux"
+  },
+  {
+    "id": "N",
+    "label": "newton"
+  },
+  {
+    "id": "Ohm",
+    "label": "ohm"
+  },
+  {
+    "id": "Pa",
+    "label": "pascal"
+  },
+  {
+    "id": "rad",
+    "label": "radian"
+  },
+  {
+    "id": "Sv",
+    "label": "sievert"
+  },
+  {
+    "id": "sr",
+    "label": "steradian"
+  },
+  {
+    "id": "S",
+    "label": "siemens"
+  },
+  {
+    "id": "T",
+    "label": "tesla"
+  },
+  {
+    "id": "V",
+    "label": "volt"
+  },
+  {
+    "id": "Wb",
+    "label": "weber"
+  },
+  {
+    "id": "W",
+    "label": "watt"
+  },
+  {
+    "id": "AU",
+    "label": "astronomical unit"
+  },
+  {
+    "id": "B",
+    "label": "bel"
+  },
+  {
+    "id": "deg",
+    "label": "plane angle degree"
+  },
+  {
+    "id": "d",
+    "label": "day"
+  },
+  {
+    "id": "u",
+    "label": "dalton"
+  },
+  {
+    "id": "eV",
+    "label": "electronvolt"
+  },
+  {
+    "id": "h",
+    "label": "hour"
+  },
+  {
+    "id": "L",
+    "label": "litre"
+  },
+  {
+    "id": "min",
+    "label": "minute"
+  },
+  {
+    "id": "Np",
+    "label": "neper"
+  },
+  {
+    "id": "t",
+    "label": "tonne"
+  },
+  {
+    "id": "'",
+    "label": "plane angle minute"
+  },
+  {
+    "id": "''",
+    "label": "plane angle second"
+  },
+  {
+    "id": "ar",
+    "label": "are"
+  },
+  {
+    "id": "[acr_br]",
+    "label": "British acre"
+  },
+  {
+    "id": "[acr_us]",
+    "label": "US customary acre"
+  },
+  {
+    "id": "[Amb'a'1'U]",
+    "label": "Ambrosia artemisiifolia allergen unit"
+  },
+  {
+    "id": "[anti'Xa'U]",
+    "label": "anti factor Xa unit"
+  },
+  {
+    "id": "[APL'U]",
+    "label": "APL unit"
+  },
+  {
+    "id": "[arb'U]",
+    "label": "arbitary unit"
+  },
+  {
+    "id": "[AU]",
+    "label": "allergy unit"
+  },
+  {
+    "id": "[BAU]",
+    "label": "bioequivalent allergen unit"
+  },
+  {
+    "id": "[bbl_us]",
+    "label": "US barrel"
+  },
+  {
+    "id": "[bdsk'U]",
+    "label": "Bodansky unit"
+  },
+  {
+    "id": "[beth'U]",
+    "label": "Bethesda unit"
+  },
+  {
+    "id": "[bf_i]",
+    "label": "board foot"
+  },
+  {
+    "id": "[Btu_39]",
+    "label": "British thermal unit at 39°F"
+  },
+  {
+    "id": "[Btu_59]",
+    "label": "British thermal unit at 59°F"
+  },
+  {
+    "id": "[Btu_60]",
+    "label": "British thermal unit at 60°F"
+  },
+  {
+    "id": "[Btu_IT]",
+    "label": "international table British thermal unit"
+  },
+  {
+    "id": "[Btu_m]",
+    "label": "mean British thermal unit"
+  },
+  {
+    "id": "[Btu_th]",
+    "label": "thermochemical British thermal unit"
+  },
+  {
+    "id": "[Btu]",
+    "label": "British thermal unit"
+  },
+  {
+    "id": "[bu_br]",
+    "label": "British bushel"
+  },
+  {
+    "id": "[bu_us]",
+    "label": "US bushel"
+  },
+  {
+    "id": "[c]",
+    "label": "velocity of light in a vacuum"
+  },
+  {
+    "id": "[Cal]",
+    "label": "large calorie"
+  },
+  {
+    "id": "[car_Au]",
+    "label": "gold alloys carat"
+  },
+  {
+    "id": "[car_m]",
+    "label": "metric carat"
+  },
+  {
+    "id": "[CCID_50]",
+    "label": "50% cell culture infectious dose"
+  },
+  {
+    "id": "[cft_i]",
+    "label": "cubic foot"
+  },
+  {
+    "id": "[CFU]",
+    "label": "colony forming unit"
+  },
+  {
+    "id": "[ch_br]",
+    "label": "British Gunter's chain"
+  },
+  {
+    "id": "[ch_us]",
+    "label": "US Gunter's chain"
+  },
+  {
+    "id": "[Ch]",
+    "label": "Charrière"
+  },
+  {
+    "id": "[cicero]",
+    "label": "cicero"
+  },
+  {
+    "id": "[cin_i]",
+    "label": "cubic inch"
+  },
+  {
+    "id": "[cml_i]",
+    "label": "circular mil"
+  },
+  {
+    "id": "[cr_i]",
+    "label": "cord"
+  },
+  {
+    "id": "[crd_us]",
+    "label": "US cord"
+  },
+  {
+    "id": "[cup_m]",
+    "label": "US legal cup"
+  },
+  {
+    "id": "[cup_us]",
+    "label": "US customary cup"
+  },
+  {
+    "id": "[cyd_i]",
+    "label": "cubic international yard"
+  },
+  {
+    "id": "[D'ag'U]",
+    "label": "D-antigen unit"
+  },
+  {
+    "id": "[degF]",
+    "label": "degree Fahrenheit"
+  },
+  {
+    "id": "[degR]",
+    "label": "degree Rankine"
+  },
+  {
+    "id": "[degRe]",
+    "label": "degree Réaumur"
+  },
+  {
+    "id": "[den]",
+    "label": "denier"
+  },
+  {
+    "id": "[didot]",
+    "label": "didot"
+  },
+  {
+    "id": "[diop]",
+    "label": "diopter"
+  },
+  {
+    "id": "[dpt_us]",
+    "label": "US dry pint"
+  },
+  {
+    "id": "[dqt_us]",
+    "label": "US dry quart"
+  },
+  {
+    "id": "[dr_ap]",
+    "label": "drachm"
+  },
+  {
+    "id": "[dr_av]",
+    "label": "dram mass unit"
+  },
+  {
+    "id": "[drp]",
+    "label": "drop"
+  },
+  {
+    "id": "[dye'U]",
+    "label": "Dye unit"
+  },
+  {
+    "id": "[e]",
+    "label": "elementary charge"
+  },
+  {
+    "id": "[EID_50]",
+    "label": "50% embryo infectious dose unit"
+  },
+  {
+    "id": "[ELU]",
+    "label": "ELISA unit"
+  },
+  {
+    "id": "[eps_0]",
+    "label": "permittivity of vacuum"
+  },
+  {
+    "id": "[EU]",
+    "label": "Ehrlich unit"
+  },
+  {
+    "id": "[fdr_br]",
+    "label": "British fluid dram"
+  },
+  {
+    "id": "[fdr_us]",
+    "label": "US fluid dram"
+  },
+  {
+    "id": "[FEU]",
+    "label": "fibrinogen equivalent unit"
+  },
+  {
+    "id": "[FFU]",
+    "label": "focus forming units"
+  },
+  {
+    "id": "[foz_br]",
+    "label": "British fluid ounce"
+  },
+  {
+    "id": "[foz_m]",
+    "label": "metric fluid ounce"
+  },
+  {
+    "id": "[foz_us]",
+    "label": "US fluid ounce"
+  },
+  {
+    "id": "[ft_br]",
+    "label": "British foot"
+  },
+  {
+    "id": "[ft_i]",
+    "label": "international foot"
+  },
+  {
+    "id": "[ft_us]",
+    "label": "US foot"
+  },
+  {
+    "id": "[fth_br]",
+    "label": "British fathom"
+  },
+  {
+    "id": "[fth_i]",
+    "label": "international fathom"
+  },
+  {
+    "id": "[fth_us]",
+    "label": "US fathom"
+  },
+  {
+    "id": "[fur_us]",
+    "label": "US furlong"
+  },
+  {
+    "id": "[G]",
+    "label": "Newtonian constant of gravitation"
+  },
+  {
+    "id": "[g]",
+    "label": "standard acceleration of free fall"
+  },
+  {
+    "id": "[gal_br]",
+    "label": "British gallon"
+  },
+  {
+    "id": "[gal_us]",
+    "label": "US gallon"
+  },
+  {
+    "id": "[gal_wi]",
+    "label": "historical gallon"
+  },
+  {
+    "id": "[gil_br]",
+    "label": "British gill"
+  },
+  {
+    "id": "[gil_us]",
+    "label": "US gill"
+  },
+  {
+    "id": "[GPL'U]",
+    "label": "GPL unit"
+  },
+  {
+    "id": "[gr]",
+    "label": "grain"
+  },
+  {
+    "id": "[h]",
+    "label": "Planck constant"
+  },
+  {
+    "id": "[hd_i]",
+    "label": "hand"
+  },
+  {
+    "id": "[hnsf'U]",
+    "label": "Hounsfield unit"
+  },
+  {
+    "id": "[hp_C]",
+    "label": "homeopathic potency of centesimal hahnemannian series"
+  },
+  {
+    "id": "[hp_M]",
+    "label": "homeopathic potency of millesimal hahnemannian series"
+  },
+  {
+    "id": "[hp_Q]",
+    "label": "homeopathic potency of quintamillesimal hahnemannian series"
+  },
+  {
+    "id": "[hp_X]",
+    "label": "homeopathic potency of decimal hahnemannian series"
+  },
+  {
+    "id": "[hp'_C]",
+    "label": "homeopathic potency of centesimal series"
+  },
+  {
+    "id": "[hp'_M]",
+    "label": "homeopathic potency of millesimal series"
+  },
+  {
+    "id": "[hp'_Q]",
+    "label": "homeopathic potency of quintamillesimal series"
+  },
+  {
+    "id": "[hp'_X]",
+    "label": "homeopathic potency of decimal series"
+  },
+  {
+    "id": "[HP]",
+    "label": "horsepower"
+  },
+  {
+    "id": "[HPF]",
+    "label": "high power field"
+  },
+  {
+    "id": "[in_br]",
+    "label": "British inch"
+  },
+  {
+    "id": "[in_i'H2O]",
+    "label": "inch of water column"
+  },
+  {
+    "id": "[in_i'Hg]",
+    "label": "inch of mercury column"
+  },
+  {
+    "id": "[in_i]",
+    "label": "inch"
+  },
+  {
+    "id": "[in_us]",
+    "label": "US inch"
+  },
+  {
+    "id": "[IR]",
+    "label": "index of allergen reactivity"
+  },
+  {
+    "id": "[IU]",
+    "label": "arbitrary international unit"
+  },
+  {
+    "id": "[iU]",
+    "label": "arbitrary international unit"
+  },
+  {
+    "id": "[k]",
+    "label": "Boltzmann constant"
+  },
+  {
+    "id": "[ka'U]",
+    "label": "King-Armstrong unit"
+  },
+  {
+    "id": "[kn_br]",
+    "label": "British knot"
+  },
+  {
+    "id": "[kn_i]",
+    "label": "international knot"
+  },
+  {
+    "id": "[knk'U]",
+    "label": "Kunkel unit"
+  },
+  {
+    "id": "[kp_C]",
+    "label": "homeopathic potency of centesimal korsakovian series"
+  },
+  {
+    "id": "[kp_M]",
+    "label": "homeopathic potency of millesimal korsakovian series"
+  },
+  {
+    "id": "[kp_Q]",
+    "label": "homeopathic potency of quintamillesimal korsakovian series"
+  },
+  {
+    "id": "[kp_X]",
+    "label": "homeopathic potency of decimal korsakovian series"
+  },
+  {
+    "id": "[lb_ap]",
+    "label": "apothecary pound"
+  },
+  {
+    "id": "[lb_av]",
+    "label": "international pound"
+  },
+  {
+    "id": "[lb_tr]",
+    "label": "troy pound"
+  },
+  {
+    "id": "[lbf_av]",
+    "label": "US pound force"
+  },
+  {
+    "id": "[lcwt_av]",
+    "label": "long hundredweight"
+  },
+  {
+    "id": "[Lf]",
+    "label": "Limit of flocculation"
+  },
+  {
+    "id": "[ligne]",
+    "label": "French line"
+  },
+  {
+    "id": "[lk_br]",
+    "label": "British link for Gunter's chain"
+  },
+  {
+    "id": "[lk_us]",
+    "label": "US link for Gunter's chain"
+  },
+  {
+    "id": "[lne]",
+    "label": "British line"
+  },
+  {
+    "id": "[LPF]",
+    "label": "low power field"
+  },
+  {
+    "id": "[lton_av]",
+    "label": "British ton"
+  },
+  {
+    "id": "[ly]",
+    "label": "light-year"
+  },
+  {
+    "id": "[m_e]",
+    "label": "electron mass"
+  },
+  {
+    "id": "[m_p]",
+    "label": "proton mass"
+  },
+  {
+    "id": "[m/s2/Hz^(1/2)]",
+    "label": "meter per square seconds per square root of hertz"
+  },
+  {
+    "id": "[mclg'U]",
+    "label": "Mac Lagan unit"
+  },
+  {
+    "id": "[mesh_i]",
+    "label": "mesh"
+  },
+  {
+    "id": "[MET]",
+    "label": "Metabolic Equivalent of Task"
+  },
+  {
+    "id": "[mi_br]",
+    "label": "British mile"
+  },
+  {
+    "id": "[mi_i]",
+    "label": "international mile"
+  },
+  {
+    "id": "[mi_us]",
+    "label": "US mile"
+  },
+  {
+    "id": "[mil_i]",
+    "label": "international mil"
+  },
+  {
+    "id": "[mil_us]",
+    "label": "US mil"
+  },
+  {
+    "id": "[min_br]",
+    "label": "British minim"
+  },
+  {
+    "id": "[min_us]",
+    "label": "US minim"
+  },
+  {
+    "id": "[MPL'U]",
+    "label": "MPL unit"
+  },
+  {
+    "id": "[mu_0]",
+    "label": "permeability of free space"
+  },
+  {
+    "id": "[nmi_br]",
+    "label": "British nautical mile"
+  },
+  {
+    "id": "[nmi_i]",
+    "label": "nautical mile"
+  },
+  {
+    "id": "[oz_ap]",
+    "label": "apothecary ounce"
+  },
+  {
+    "id": "[oz_av]",
+    "label": "international ounce"
+  },
+  {
+    "id": "[oz_m]",
+    "label": "metric ounce"
+  },
+  {
+    "id": "[oz_tr]",
+    "label": "troy ounce"
+  },
+  {
+    "id": "[p'diop]",
+    "label": "prism diopter"
+  },
+  {
+    "id": "[pc_br]",
+    "label": "British pace"
+  },
+  {
+    "id": "[pca_pr]",
+    "label": "Printer's pica"
+  },
+  {
+    "id": "[pca]",
+    "label": "pica"
+  },
+  {
+    "id": "[PFU]",
+    "label": "plaque forming unit"
+  },
+  {
+    "id": "[pH]",
+    "label": "pH"
+  },
+  {
+    "id": "[pi]",
+    "label": "the number pi"
+  },
+  {
+    "id": "[pied]",
+    "label": "pied"
+  },
+  {
+    "id": "[pk_br]",
+    "label": "British peck"
+  },
+  {
+    "id": "[pk_us]",
+    "label": "US peck"
+  },
+  {
+    "id": "[pnt_pr]",
+    "label": "Printer's point"
+  },
+  {
+    "id": "[pnt]",
+    "label": "point"
+  },
+  {
+    "id": "[PNU]",
+    "label": "protein nitrogen unit"
+  },
+  {
+    "id": "[pouce]",
+    "label": "pouce"
+  },
+  {
+    "id": "[ppb]",
+    "label": "parts per billion"
+  },
+  {
+    "id": "[ppm]",
+    "label": "parts per million"
+  },
+  {
+    "id": "[ppth]",
+    "label": "parts per thousand"
+  },
+  {
+    "id": "[pptr]",
+    "label": "parts per trillion"
+  },
+  {
+    "id": "[PRU]",
+    "label": "peripheral vascular resistance unit"
+  },
+  {
+    "id": "[psi]",
+    "label": "pound per square inch"
+  },
+  {
+    "id": "[pt_br]",
+    "label": "British pint"
+  },
+  {
+    "id": "[pt_us]",
+    "label": "US pint"
+  },
+  {
+    "id": "[pwt_tr]",
+    "label": "troy pennyweight"
+  },
+  {
+    "id": "[qt_br]",
+    "label": "British quart"
+  },
+  {
+    "id": "[qt_us]",
+    "label": "US quart"
+  },
+  {
+    "id": "[rch_us]",
+    "label": "US Ramden's chain"
+  },
+  {
+    "id": "[rd_br]",
+    "label": "British rod"
+  },
+  {
+    "id": "[rd_us]",
+    "label": "US rod"
+  },
+  {
+    "id": "[rlk_us]",
+    "label": "US link for Ramden's chain"
+  },
+  {
+    "id": "[S]",
+    "label": "Svedberg unit"
+  },
+  {
+    "id": "[sc_ap]",
+    "label": "scruple"
+  },
+  {
+    "id": "[sct]",
+    "label": "section"
+  },
+  {
+    "id": "[scwt_av]",
+    "label": "short hundredweight"
+  },
+  {
+    "id": "[sft_i]",
+    "label": "international square foot"
+  },
+  {
+    "id": "[sin_i]",
+    "label": "international square inch"
+  },
+  {
+    "id": "[smgy'U]",
+    "label": "Somogyi unit"
+  },
+  {
+    "id": "[smi_us]",
+    "label": "US square mile"
+  },
+  {
+    "id": "[smoot]",
+    "label": "Smoot"
+  },
+  {
+    "id": "[srd_us]",
+    "label": "US square rod"
+  },
+  {
+    "id": "[ston_av]",
+    "label": "US short ton"
+  },
+  {
+    "id": "[stone_av]",
+    "label": "British stone"
+  },
+  {
+    "id": "[syd_i]",
+    "label": "square international yard"
+  },
+  {
+    "id": "[tb'U]",
+    "label": "tuberculin unit"
+  },
+  {
+    "id": "[tbs_m]",
+    "label": "metric tablespoon"
+  },
+  {
+    "id": "[tbs_us]",
+    "label": "US tablespoon"
+  },
+  {
+    "id": "[TCID_50]",
+    "label": "50% tissue culture infectious dose unit"
+  },
+  {
+    "id": "[todd'U]",
+    "label": "Todd unit"
+  },
+  {
+    "id": "[tsp_m]",
+    "label": "metric teaspoon"
+  },
+  {
+    "id": "[tsp_us]",
+    "label": "US teaspoon"
+  },
+  {
+    "id": "[twp]",
+    "label": "township"
+  },
+  {
+    "id": "[USP'U]",
+    "label": "United States Pharmacopeia unit"
+  },
+  {
+    "id": "[wood'U]",
+    "label": "Wood unit"
+  },
+  {
+    "id": "[yd_br]",
+    "label": "British yard"
+  },
+  {
+    "id": "[yd_i]",
+    "label": "international yard"
+  },
+  {
+    "id": "[yd_us]",
+    "label": "US yard"
+  },
+  {
+    "id": "%",
+    "label": "percent"
+  },
+  {
+    "id": "%[slope]",
+    "label": "percent of slope"
+  },
+  {
+    "id": "10*",
+    "label": "the number ten for arbitrary powers"
+  },
+  {
+    "id": "10^",
+    "label": "the number ten for arbitrary powers"
+  },
+  {
+    "id": "a_g",
+    "label": "mean Gregorian year"
+  },
+  {
+    "id": "a_j",
+    "label": "mean Julian year"
+  },
+  {
+    "id": "a_t",
+    "label": "tropical year"
+  },
+  {
+    "id": "Ao",
+    "label": "Angstrom"
+  },
+  {
+    "id": "atm",
+    "label": "standard atmosphere"
+  },
+  {
+    "id": "att",
+    "label": "technical atmosphere"
+  },
+  {
+    "id": "a",
+    "label": "year"
+  },
+  {
+    "id": "B[10.nV]",
+    "label": "bel 10 nanovolt"
+  },
+  {
+    "id": "B[kW]",
+    "label": "bel kilowatt"
+  },
+  {
+    "id": "B[mV]",
+    "label": "bel millivolt"
+  },
+  {
+    "id": "B[SPL]",
+    "label": "bel sound pressure"
+  },
+  {
+    "id": "B[uV]",
+    "label": "bel microvolt"
+  },
+  {
+    "id": "B[V]",
+    "label": "bel volt"
+  },
+  {
+    "id": "B[W]",
+    "label": "bel watt"
+  },
+  {
+    "id": "bar",
+    "label": "bar"
+  },
+  {
+    "id": "Bd",
+    "label": "baud"
+  },
+  {
+    "id": "Bi",
+    "label": "Biot"
+  },
+  {
+    "id": "bit",
+    "label": "bit"
+  },
+  {
+    "id": "bit_s",
+    "label": "logarithmic bit"
+  },
+  {
+    "id": "By",
+    "label": "byte"
+  },
+  {
+    "id": "b",
+    "label": "barn"
+  },
+  {
+    "id": "cal",
+    "label": "calorie"
+  },
+  {
+    "id": "cal_[15]",
+    "label": "calorie at 15°C"
+  },
+  {
+    "id": "cal_[20]",
+    "label": "calorie at 20°C"
+  },
+  {
+    "id": "cal_IT",
+    "label": "international table calorie"
+  },
+  {
+    "id": "cal_m",
+    "label": "mean calorie"
+  },
+  {
+    "id": "cal_th",
+    "label": "thermochemical calorie"
+  },
+  {
+    "id": "Ci",
+    "label": "curie"
+  },
+  {
+    "id": "circ",
+    "label": "plane angle circle"
+  },
+  {
+    "id": "dyn",
+    "label": "dyne"
+  },
+  {
+    "id": "eq",
+    "label": "equivalent"
+  },
+  {
+    "id": "erg",
+    "label": "erg"
+  },
+  {
+    "id": "g%",
+    "label": "gram percent"
+  },
+  {
+    "id": "G",
+    "label": "Gauss"
+  },
+  {
+    "id": "Gal",
+    "label": "Gal"
+  },
+  {
+    "id": "Gb",
+    "label": "Gilbert"
+  },
+  {
+    "id": "gf",
+    "label": "gram-force"
+  },
+  {
+    "id": "gon",
+    "label": "gon"
+  },
+  {
+    "id": "Ky",
+    "label": "Kayser"
+  },
+  {
+    "id": "Lmb",
+    "label": "Lambert"
+  },
+  {
+    "id": "m[H2O]",
+    "label": "meter of water column"
+  },
+  {
+    "id": "m[Hg]",
+    "label": "meter of mercury column"
+  },
+  {
+    "id": "mho",
+    "label": "mho"
+  },
+  {
+    "id": "mo",
+    "label": "month"
+  },
+  {
+    "id": "mo_g",
+    "label": "mean Gregorian month"
+  },
+  {
+    "id": "mo_j",
+    "label": "mean Julian month"
+  },
+  {
+    "id": "mo_s",
+    "label": "synodal month"
+  },
+  {
+    "id": "Mx",
+    "label": "Maxwell"
+  },
+  {
+    "id": "Oe",
+    "label": "Oersted"
+  },
+  {
+    "id": "osm",
+    "label": "osmole"
+  },
+  {
+    "id": "pc",
+    "label": "parsec"
+  },
+  {
+    "id": "ph",
+    "label": "phot"
+  },
+  {
+    "id": "P",
+    "label": "poise"
+  },
+  {
+    "id": "RAD",
+    "label": "radiation absorbed dose"
+  },
+  {
+    "id": "REM",
+    "label": "radiation equivalent man"
+  },
+  {
+    "id": "R",
+    "label": "roentgen"
+  },
+  {
+    "id": "sb",
+    "label": "stilb"
+  },
+  {
+    "id": "sph",
+    "label": "solid angle spere"
+  },
+  {
+    "id": "St",
+    "label": "Stokes"
+  },
+  {
+    "id": "st",
+    "label": "stere"
+  },
+  {
+    "id": "tex",
+    "label": "tex"
+  },
+  {
+    "id": "U",
+    "label": "enzyme unit"
+  },
+  {
+    "id": "wk",
+    "label": "week"
+  }
+]

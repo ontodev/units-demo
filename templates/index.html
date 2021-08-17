@@ -5,10 +5,10 @@
   <form method="post">
     <div class="row g-3 align-items-center">
       <div class="col-auto">
-        <label for="ucumCode" class="form-label">Enter a UCUM code</label>
+        <label for="ucumCode-typeahead" class="form-label">Enter a UCUM code</label>
       </div>
       <div class="col-auto">
-        <input type="text" id="ucumCode" name="ucum_code" class="form-control">
+        <input type="text" id="ucumCode-typeahead" name="ucum_code" class="typeahead form-control">
       </div>
       <div class="col-auto">
         <button type="submit" class="btn btn-primary">Go</button>
@@ -23,5 +23,66 @@
     {% endfor %}
   </ul>
 </div>
+<script>
+    function configure_typeahead(node) {
+      if (!node.id || !node.id.endsWith("-typeahead")) {
+        return;
+      }
+      table = node.id.replace("-typeahead", "");
+      var bloodhound = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.nonword('id', 'label'),
+        queryTokenizer: Bloodhound.tokenizers.nonword,
+        sorter: function(a, b) {
+          return a.order - b.order;
+        },
+        remote: {
+          url: '?query=%QUERY',
+          wildcard: '%QUERY',
+          transform : function(response) {
+              return bloodhound.sorter(response);
+          }
+        }
+      });
+      $(node).typeahead({
+        minLength: 0,
+        hint: false,
+        highlight: true
+      }, {
+        name: table,
+        source: bloodhound,
+        display: function(item) {
+          return item.id + ' (' + item.label + ')'
+        },
+        limit: 40
+      });
+      $(node).bind('click', function(e) {
+        $(node).select();
+      });
+      $(node).bind('typeahead:select', function(ev, suggestion) {
+        $(node).prev().val(suggestion.id);
+        go(table, suggestion.id);
+      });
+      $(node).bind('keypress',function(e) {
+        if(e.which == 13) {
+          go(table, $('#' + table + '-hidden').val());
+        }
+      });
+    }
+    $('.typeahead').each(function() { configure_typeahead(this); });
+    function go(table, value) {
+      q = {}
+      table = table.replace('_all', '');
+      q[table] = value
+      window.location = query(q);
+    }
+    function query(obj) {
+      var str = [];
+      for (var p in obj)
+        if (obj.hasOwnProperty(p)) {
+          str.push(encodeURIComponent(obj[p]));
+        }
+      return str.join("&");
+    }
+</script>
 
 {% endblock %}

@@ -1,2 +1,4 @@
 .idea
 _venv
+build
+__pycache__
