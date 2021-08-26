@@ -1,4 +1,5 @@
 import json
+import os
 
 from flask import Flask, redirect, render_template, request, Response, send_file, url_for
 from io import BytesIO
@@ -8,6 +9,8 @@ from units.helpers import get_exponents, get_mappings, get_prefixes, get_si_mapp
 from urllib.parse import unquote_plus
 
 app = Flask(__name__)
+
+BASE_IRI = os.environ.get("UNIT_BASE_IRI", "https://w3id.org/units/")
 
 UNITS_EXPONENTS = get_exponents()
 UNITS_MAPPINGS = get_mappings()
@@ -58,12 +61,13 @@ def index():
                 UNITS_EXPONENTS,
                 UNITS_MAPPINGS,
                 fail_on_err=True,
+                base_iri=BASE_IRI
             )
         except (RecursionError, ValueError):
             return error(f"'{ucum_code}' is not a valid UCUM code.")
         # The canonical code used in IRI may be different than provided code
         iri = str(list(gout.subjects(RDF.type, OWL.NamedIndividual))[0])
-        url_code = unquote_plus(iri.replace("https://w3id.org/units/", ""))
+        url_code = unquote_plus(iri.replace(BASE_IRI, ""))
         return redirect(url_for("show_ucum", ucum_code=url_code))
     query = request.args.get("query")
     if query:
@@ -87,6 +91,7 @@ def show_ucum(ucum_code):
             UNITS_EXPONENTS,
             UNITS_MAPPINGS,
             fail_on_err=True,
+            base_iri=BASE_IRI
         )
     except (RecursionError, ValueError):
         return error(f"'{ucum_code}' is not a valid UCUM code.")
