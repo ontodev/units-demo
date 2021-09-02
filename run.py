@@ -3,19 +3,13 @@ import os
 
 from flask import Flask, redirect, render_template, request, Response, send_file, url_for
 from io import BytesIO
-from rdflib import RDF, OWL
+from rdflib import Graph, Literal, OWL, RDF, RDFS, URIRef
 from units.convert import convert, graph_to_html
-from units.helpers import get_exponents, get_mappings, get_prefixes, get_si_mappings
 from urllib.parse import unquote_plus
 
 app = Flask(__name__)
 
 BASE_IRI = os.environ.get("UNIT_BASE_IRI", "https://w3id.org/units/")
-
-UNITS_EXPONENTS = get_exponents()
-UNITS_MAPPINGS = get_mappings()
-UNITS_PREFIXES = get_prefixes()
-UNITS_SI_MAPPINGS = get_si_mappings()
 
 EXAMPLES = [
     ("/A/s3/cg3/T3", "A-1.s-3.cg-3.T-3"),
@@ -45,6 +39,8 @@ EXAMPLES = [
     ("Wb", "Wb"),
 ]
 
+PREDICATES = ["SI_code", "UCUM_code"]
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -56,10 +52,6 @@ def index():
         try:
             gout = convert(
                 [ucum_code],
-                UNITS_SI_MAPPINGS,
-                UNITS_PREFIXES,
-                UNITS_EXPONENTS,
-                UNITS_MAPPINGS,
                 fail_on_err=True,
                 base_iri=BASE_IRI
             )
@@ -83,19 +75,24 @@ def index():
 
 @app.route("/<ucum_code>")
 def show_ucum(ucum_code):
-    try:
-        gout = convert(
-            [ucum_code],
-            UNITS_SI_MAPPINGS,
-            UNITS_PREFIXES,
-            UNITS_EXPONENTS,
-            UNITS_MAPPINGS,
-            fail_on_err=True,
-            base_iri=BASE_IRI
-        )
-    except (RecursionError, ValueError):
-        return error(f"'{ucum_code}' is not a valid UCUM code.")
     outfmt = request.args.get("format")
+    if ucum_code in PREDICATES:
+        gout = Graph()
+        uri = URIRef(BASE_IRI + ucum_code)
+        gout.add((uri, RDF.type, OWL.AnnotationProperty))
+        gout.add((uri, RDFS.label, Literal(ucum_code.replace("_", " "))))
+        if not outfmt:
+            html = graph_to_html(gout, rdf_type=OWL.AnnotationProperty)
+            return render_template("term.html", html=html)
+    else:
+        try:
+            gout = convert(
+                [ucum_code],
+                fail_on_err=True,
+                base_iri=BASE_IRI
+            )
+        except (RecursionError, ValueError):
+            return error(f"'{ucum_code}' is not a valid UCUM code.")
     if outfmt:
         # Return a download file
         if outfmt == "ttl":
