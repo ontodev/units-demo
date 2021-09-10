@@ -1,2 +1,2 @@
 Flask
-git+https://github.com/ontodev/units.git
+git+https://github.com/units-of-measurement/units-of-measurement.git

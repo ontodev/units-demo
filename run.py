@@ -4,7 +4,7 @@ import os
 from flask import Flask, redirect, render_template, request, Response, send_file, url_for
 from io import BytesIO
 from rdflib import Graph, Literal, OWL, RDF, RDFS, URIRef
-from units.convert import convert, graph_to_html
+from units_of_measurement.convert import convert, graph_to_html
 from urllib.parse import unquote_plus
 
 app = Flask(__name__)
