@@ -9,7 +9,7 @@ from urllib.parse import unquote_plus
 
 app = Flask(__name__)
 
-BASE_IRI = os.environ.get("UNIT_BASE_IRI", "https://w3id.org/units/")
+BASE_IRI = os.environ.get("UNIT_BASE_IRI", "https://w3id.org/uom/")
 
 EXAMPLES = [
     ("/A/s3/cg3/T3", "A-1.s-3.cg-3.T-3"),

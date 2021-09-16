@@ -17,6 +17,20 @@
   </form>
 </div>
 <div class="row">
+  <h2>About</h2>
+  <p>Units-of-measurement (UOM) provides <a href="https://en.wikipedia.org/wiki/URL">URLs</a> for <a href="https://ucum.org">Unified Code for Units of Measure</a> (UCUM) codes, and mappings to a number of units ontologies and systems, in human- and machine-readable <a href="https://en.wikipedia.org/wiki/Linked_data">linked data</a> formats.</p>
+  <p>UOM currently supports International System of Units (SI) &quot;metric&quot; units and prefixes (as used in UCUM), and a number of non-SI units. It does not currently support UCUM&#39;s &quot;non-units&quot; using <code>{}</code> syntax.</p>
+  <p>UOM currently supports mapping to (in alphabetical order):</p>
+  <ul>
+    <li><a href="http://vocab.nerc.ac.uk/collection/P06/current/">NERC_P06: Natural Environment Research Council BODC-approved data storage units</a></li>
+    <li><a href="https://bioportal.bioontology.org/ontologies/OBOE">OBOE: Extensible Observation Ontology</a></li>
+    <li><a href="http://www.ontology-of-units-of-measure.org/">OM: Ontology of units of Measure</a></li>
+    <li><a href="http://qudt.org/">QUDT: Quantities, Units, Dimensions and dataTypes</a></li>
+    <li><a href="http://purl.obolibrary.org/obo/UO_">UO: Units Ontology</a>
+  </ul>
+</div>
+<div class="row">
+  <h2>Examples</h2>
   <ul>
     {% for inpt, code in examples %}
     <li><a href="/{{ code }}">{{ inpt }}</a></li>
