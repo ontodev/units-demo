@@ -28,7 +28,7 @@ EXAMPLES = [
     ("m/s", "m.s-1"),
     ("m.s-2", "m.s-2"),
     ("m/s/d", "m.s-1.d-1"),
-    ("mmol.mL-1", "mmol.mL-2"),
+    ("mmol.mL-1", "mmol.mL-1"),
     ("mol.L-1", "mol.L-1"),
     ("mol.um", "mol.um"),
     ("ng-1", "ng-1"),
